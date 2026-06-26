@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrangeCode Academy - Belajar Pemrograman Web Interaktif</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Belajar HTML, CSS, dan JavaScript dengan mudah melalui OrangeCode Academy. Nikmati modul belajar interaktif, editor kode langsung, dan kuis menyenangkan.">
+  <meta name="keywords" content="belajar html, belajar css, belajar javascript, belajar web design, coding playground, kuis coding">
+  <meta name="author" content="OrangeCode Team">
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo" id="nav-logo">
+        <div class="logo-dot"></div>
+        Orange<span>Code</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-item active" data-page="home">
+          <a href="#home" id="link-home"><i class="fas fa-home"></i> Beranda</a>
+        </li>
+        <li class="nav-item" data-page="materi">
+          <a href="#materi" id="link-materi"><i class="fas fa-book-open"></i> Materi</a>
+        </li>
+        <li class="nav-item" data-page="playground">
+          <a href="#playground" id="link-playground"><i class="fas fa-laptop-code"></i> Playground</a>
+        </li>
+        <li class="nav-item" data-page="kuis">
+          <a href="#kuis" id="link-kuis"><i class="fas fa-graduation-cap"></i> Kuis</a>
+        </li>
+        <li class="nav-item" data-page="kontak">
+          <a href="#kontak" id="link-kontak"><i class="fas fa-paper-plane"></i> Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main>
+    
+    <!-- HOME PAGE -->
+    <section id="page-home" class="page-section active">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Tingkatkan Skill Coding Kamu Di <span>OrangeCode</span></h1>
+          <p>Platform belajar pemrograman web modern yang interaktif, menyenangkan, dan gratis. Mulai petualangan belajarmu hari ini dengan visual yang menarik dan praktik langsung!</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" id="btn-hero-start"><i class="fas fa-play"></i> Mulai Belajar</button>
+            <button class="btn btn-secondary" id="btn-hero-play"><i class="fas fa-terminal"></i> Buka Editor</button>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-glow"></div>
+          <div class="hero-code-box">
+            <div class="code-header">
+              <span class="code-dot code-red"></span>
+              <span class="code-dot code-yellow"></span>
+              <span class="code-dot code-green"></span>
+              <span class="code-title">orange-code.js</span>
+            </div>
+            <pre><code><span class="code-comment">// Mari belajar JavaScript!</span>
+<span class="code-keyword">const</span> learner = {
+  name: <span class="code-string">"Anda"</span>,
+  passion: <span class="code-string">"Web Development"</span>,
+  status: <span class="code-string">"Learning"</span>
+};
+
+<span class="code-keyword">function</span> <span class="code-tag">startJourney</span>(user) {
+  console.log(<span class="code-string">`Halo ${user.name}, selamat datang!`</span>);
+  <span class="code-keyword">return</span> <span class="code-string">"Ayo jadi Developer Andal!"</span>;
+}
+
+<span class="code-tag">startJourney</span>(learner);</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Section -->
+      <div class="home-stats">
+        <div class="stat-item card">
+          <div class="stat-icon"><i class="fas fa-book"></i></div>
+          <div class="stat-info">
+            <h3>3</h3>
+            <p>Modul Utama (HTML, CSS, JS)</p>
+          </div>
+        </div>
+        <div class="stat-item card">
+          <div class="stat-icon"><i class="fas fa-code"></i></div>
+          <div class="stat-info">
+            <h3>Live</h3>
+            <p>Code Editor Playground</p>
+          </div>
+        </div>
+        <div class="stat-item card">
+          <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+          <div class="stat-info">
+            <h3>Uji</h3>
+            <p>Pemahaman Lewat Kuis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+      <div class="features-section">
+        <h2>Kenapa Belajar di <span>OrangeCode</span>?</h2>
+        <div class="features-grid">
+          <div class="feature-card card">
+            <div class="feat-icon"><i class="fas fa-rocket"></i></div>
+            <h3>Belajar Terarah</h3>
+            <p>Materi disusun secara berurutan mulai dari dasar HTML, styling dengan CSS, hingga logika dengan JavaScript.</p>
+          </div>
+          <div class="feature-card card">
+            <div class="feat-icon"><i class="fas fa-keyboard"></i></div>
+            <h3>Praktik Langsung</h3>
+            <p>Tidak perlu install editor di komputer. Cukup gunakan Playground interaktif kami dan lihat hasil kodemu seketika.</p>
+          </div>
+          <div class="feature-card card">
+            <div class="feat-icon"><i class="fas fa-award"></i></div>
+            <h3>Kuis Interaktif</h3>
+            <p>Tantang dirimu dengan kuis-kuis berstruktur di setiap akhir modul untuk mengukur sejauh mana pemahamanmu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERI PAGE -->
+    <section id="page-materi" class="page-section">
+      <div class="section-header">
+        <h1>Modul <span>Materi Belajar</span></h1>
+        <p>Pilih topik di bawah ini untuk memulai membaca rangkuman teori pemrograman web yang dikemas secara padat dan jelas.</p>
+      </div>
+
+      <div class="materi-tabs">
+        <button class="tab-btn active" id="tab-html" data-tab="html"><i class="fab fa-html5"></i> HTML5</button>
+        <button class="tab-btn" id="tab-css" data-tab="css"><i class="fab fa-css3-alt"></i> CSS3</button>
+        <button class="tab-btn" id="tab-js" data-tab="js"><i class="fab fa-js-square"></i> JavaScript</button>
+      </div>
+
+      <div class="materi-content-wrapper">
+        <!-- HTML Content -->
+        <div class="materi-pane active" id="pane-html">
+          <div class="materi-card card">
+            <h3>1. Pengenalan Dokumen HTML</h3>
+            <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. HTML mendefinisikan struktur halaman web Anda.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Halaman Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Halo Dunia&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty easy">Mudah</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="html" data-code-index="0">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>2. Elemen, Tag, & Atribut</h3>
+            <p>Elemen HTML ditulis dengan tag pembuka, konten, dan tag penutup. Atribut memberikan informasi tambahan tentang elemen tersebut (ditulis di tag pembuka).</p>
+            <pre><code>&lt;!-- Tag dengan Atribut href --&gt;
+&lt;a href="https://google.com"&gt;Buka Google&lt;/a&gt;
+
+&lt;!-- Tag Gambar dengan src dan alt --&gt;
+&lt;img src="gambar.jpg" alt="Pemandangan"&gt;</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty easy">Mudah</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="html" data-code-index="1">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>3. Form & Input</h3>
+            <p>Form digunakan untuk mengumpulkan input dari user. Terdiri dari berbagai elemen seperti text input, password, checkbox, radio, dan tombol submit.</p>
+            <pre><code>&lt;form action="/submit"&gt;
+  &lt;label&gt;Nama: &lt;/label&gt;
+  &lt;input type="text" name="nama"&gt;
+  &lt;button type="submit"&gt;Kirim&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty medium">Sedang</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="html" data-code-index="2">Coba Code</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS Content -->
+        <div class="materi-pane" id="pane-css">
+          <div class="materi-card card">
+            <h3>1. Pengenalan CSS & Selector</h3>
+            <p>CSS (Cascading Style Sheets) digunakan untuk mengatur gaya visual halaman web (warna, font, tata letak). Selector menentukan elemen mana yang ingin diberi gaya.</p>
+            <pre><code>/* Menargetkan semua tag h1 */
+h1 {
+  color: #ff6b00;
+  font-size: 24px;
+}
+
+/* Menargetkan class (.nama-class) */
+.box-warna {
+  background-color: #151821;
+}</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty easy">Mudah</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="css" data-code-index="0">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>2. CSS Box Model</h3>
+            <p>Setiap elemen HTML dianggap sebagai sebuah kotak ("box"). Box Model terdiri dari: Content (isi), Padding (jarak dalam), Border (garis tepi), dan Margin (jarak luar).</p>
+            <pre><code>.card-box {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ff6b00;
+  margin: 15px;
+}</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty easy">Mudah</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="css" data-code-index="1">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>3. Flexbox Layout</h3>
+            <p>CSS Flexbox mempermudah pengaturan tata letak satu dimensi secara dinamis dan responsif, baik baris (row) maupun kolom (column).</p>
+            <pre><code>.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #151821;
+  padding: 10px;
+}</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty medium">Sedang</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="css" data-code-index="2">Coba Code</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- JS Content -->
+        <div class="materi-pane" id="pane-js">
+          <div class="materi-card card">
+            <h3>1. Variabel & Tipe Data</h3>
+            <p>JavaScript digunakan untuk logika interaktif. Variabel menyimpan data. Ada 3 cara deklarasi: var, let, dan const. Tipe datanya meliputi string, number, boolean, array, dll.</p>
+            <pre><code>let nama = "Budi";
+const umur = 20;
+let sudahLulus = false;
+let hobi = ["coding", "gaming"];</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty easy">Mudah</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="js" data-code-index="0">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>2. DOM Manipulation</h3>
+            <p>DOM (Document Object Model) memungkinkan JS mengakses dan mengubah elemen HTML & CSS secara dinamis saat web sedang berjalan.</p>
+            <pre><code>// Mengambil elemen h1 berdasarkan ID
+const judul = document.getElementById("title");
+
+// Mengubah teks dan warna
+judul.innerText = "Selamat Belajar!";
+judul.style.color = "#ff6b00";</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty medium">Sedang</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="js" data-code-index="1">Coba Code</button>
+            </div>
+          </div>
+
+          <div class="materi-card card">
+            <h3>3. Event Listener</h3>
+            <p>Event listener digunakan agar web merespon tindakan user, seperti klik tombol, ketikan keyboard, submit formulir, atau scroll halaman.</p>
+            <pre><code>const tombol = document.querySelector("#myBtn");
+
+tombol.addEventListener("click", () => {
+  alert("Tombol berhasil diklik!");
+});</code></pre>
+            <div class="materi-footer">
+              <span class="difficulty medium">Sedang</span>
+              <button class="btn btn-secondary btn-sm run-in-playground" data-code-type="js" data-code-index="2">Coba Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAYGROUND PAGE -->
+    <section id="page-playground" class="page-section">
+      <div class="section-header">
+        <h1>Interactive <span>Code Playground</span></h1>
+        <p>Tulis kode HTML dan CSS di bawah ini, lalu lihat hasilnya secara instan di panel kanan. Praktik membuat belajar lebih menyenangkan!</p>
+      </div>
+
+      <div class="playground-container">
+        <!-- Left Pane: Editor -->
+        <div class="editor-wrapper">
+          <div class="playground-header">
+            <h3><i class="fas fa-edit"></i> Code Editor</h3>
+            <div class="editor-tabs">
+              <button class="editor-tab-btn active" id="tab-editor-html" data-editor="html">HTML</button>
+              <button class="editor-tab-btn" id="tab-editor-css" data-editor="css">CSS</button>
+            </div>
+          </div>
+          <div class="playground-editor-area">
+            <textarea class="code-input active" id="editor-html" placeholder="Tulis kode HTML Anda di sini..." spellcheck="false"></textarea>
+            <textarea class="code-input" id="editor-css" placeholder="Tulis kode CSS Anda di sini..." spellcheck="false"></textarea>
+          </div>
+        </div>
+
+        <!-- Right Pane: Preview -->
+        <div class="preview-wrapper">
+          <div class="playground-header preview-header">
+            <h3><i class="fas fa-eye"></i> Real-time Preview</h3>
+            <span style="font-size: 0.8rem; color: #6c757d; font-family: var(--font-mono);">output.html</span>
+          </div>
+          <iframe class="preview-frame" id="preview-frame"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ PAGE -->
+    <section id="page-kuis" class="page-section">
+      <div class="section-header">
+        <h1>Uji Kemampuan: <span>Kuis Interaktif</span></h1>
+        <p>Kerjakan 5 soal pilihan ganda berikut untuk mengetes pengetahuan dasar kamu seputar HTML, CSS, dan JavaScript.</p>
+      </div>
+
+      <div class="quiz-wrapper">
+        <!-- Quiz Progress -->
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quiz-progress"></div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-active-container">
+          <div class="quiz-card card" id="quiz-card">
+            <div class="quiz-question-number" id="quiz-q-num">Pertanyaan 1 dari 5</div>
+            <div class="quiz-question-text" id="quiz-q-text">Apa kepanjangan dari HTML?</div>
+            <div class="quiz-options-list" id="quiz-options">
+              <!-- Dynamically populated options -->
+              <div class="quiz-option" data-idx="0">A. Hyper Text Markup Language</div>
+              <div class="quiz-option" data-idx="1">B. Home Tool Markup Language</div>
+              <div class="quiz-option" data-idx="2">C. Hyperlinks and Text Markup Language</div>
+              <div class="quiz-option" data-idx="3">D. Hyper Tool Markup Language</div>
+            </div>
+            <div class="quiz-footer">
+              <button class="btn btn-primary" id="btn-quiz-next" disabled>Lanjut <i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quiz Result Screen (Hidden initially) -->
+        <div id="quiz-result-container" style="display: none;">
+          <div class="quiz-result-card card">
+            <div class="quiz-result-icon" id="quiz-result-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h2 class="quiz-result-title" id="quiz-result-title">Selamat! Kamu Menyelesaikan Kuis</h2>
+            <p class="quiz-result-desc" id="quiz-result-desc">Kerja bagus, kamu sudah menyelesaikan semua soal kuis!</p>
+            <div class="quiz-score-badge" id="quiz-score-badge">
+              80<span>/100</span>
+            </div>
+            <div>
+              <button class="btn btn-primary" id="btn-quiz-restart"><i class="fas fa-redo"></i> Ulangi Kuis</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section id="page-kontak" class="page-section">
+      <div class="section-header">
+        <h1>Hubungi <span>Kami</span></h1>
+        <p>Ada saran, pertanyaan, atau masukan untuk pengembangan website belajar ini? Kirim pesanmu di bawah ini.</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Info Cards -->
+        <div class="contact-info">
+          <div class="contact-detail-card card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail-text">
+              <h4>Alamat Kantor</h4>
+              <p>Jl. Orange Raya No. 45, Jakarta Selatan, Indonesia</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-card card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail-text">
+              <h4>Email Dukungan</h4>
+              <p>support@orangecode.academy</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-card card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-detail-text">
+              <h4>Telepon / WhatsApp</h4>
+              <p>+62 812-3456-7890</p>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 1rem;">Ikuti Kami</h4>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Github"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card card">
+          <div class="form-status" id="form-status"></div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="form-name">Nama Lengkap</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Tulis namamu..." required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Alamat Email</label>
+              <input type="email" id="form-email" class="form-control" placeholder="nama@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subjek</label>
+              <input type="text" id="form-subject" class="form-control" placeholder="Tujuan pesan..." required>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Pesan Anda</label>
+              <textarea id="form-message" class="form-control" placeholder="Tulis detail pesan di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-submit-form" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-text">
+        &copy; 2026 OrangeCode Academy. Dibuat dengan cinta untuk pembelajaran gratis pemrograman web.
+      </div>
+      <a href="#" class="footer-logo">
+        Orange<span>Code</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
